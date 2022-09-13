@@ -1,0 +1,131 @@
+:root {
+    --base-color: rgb(34, 34, 34);
+    --base-color-clear: rgba(34, 34, 34, 0.3);
+}
+
+.many-buttons {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left-color: rgba(0, 0, 0, 0.35);
+    border-right-color: rgba(0, 0, 0, 0.35);
+    border-top-color: rgba(0, 0, 0, 0.35);
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-font: none;
+    -unity-font-definition: url('project://database/Assets/UI/UI%20Assets/Fonts/Ubuntu%20font%20asset.asset?fileID=11400000&guid=164aef100311e1e4d80de78f643dcdfe&type=2#Ubuntu font asset');
+    -unity-font-style: bold;
+    height: 50px;
+    font-size: 24px;
+}
+
+.many-buttons:hover {
+    scale: 1.1 1.1;
+    background-color: rgb(255, 255, 255);
+}
+
+.many-buttons:active {
+    scale: 1 1;
+    background-color: rgb(233, 233, 233);
+}
+
+.hide {
+    display: none;
+}
+
+.unity-slider {
+    height: 50px;
+    width: 500px;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    -unity-text-align: middle-left;
+}
+
+.unity-slider > Label {
+    min-width: 175px;
+    width: 175px;
+    margin-right: 20px;
+    color: var(--base-color);
+    font-size: 24px;
+}
+
+#unity-drag-container {
+    flex-grow: 1;
+    height: 20px;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: var(--base-color);
+    background-color: white;
+    align-self: center;
+}
+
+#unity-tracker {
+    top: 0;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    background-color: var(--base-color-clear);
+}
+
+#unity-dragger {
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: var(--base-color);
+    padding: 0;
+    margin: 0;
+}
+
+#unity-dragger-border {
+    border-width: 0;
+    background-color: rgb(200, 0, 0);
+}
+
+Label {
+    margin: 0;
+    padding: 0;
+}
+
+.unity-dropdown {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    -unity-text-align: middle-left;
+    font-size: 24px;
+    -unity-font-definition: url('project://database/Assets/UI/UI%20Assets/Fonts/Ubuntu/Ubuntu-Bold%20SDF.asset?fileID=11400000&guid=247349f10b9657f4fb0fdca8b2487f00&type=2#Ubuntu-Bold SDF');
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.unity-dropdown > VisualElement {
+    background-color: transparent;
+    border-width: 0;
+}

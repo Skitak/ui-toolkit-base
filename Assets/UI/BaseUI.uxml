@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/style.uss?fileID=7433441132597879392&amp;guid=7c1845b9ff80f2e4d9f9cf5254e94fbc&amp;type=3#style" />
+    <Style src="project://database/Assets/UI/behavior.uss?fileID=7433441132597879392&amp;guid=72c08e938fc9a8b4aad1f542f8a7ad8f&amp;type=3#behavior" />
+    <ui:GroupBox name="PageRoot" style="flex-grow: 1; justify-content: center; align-items: center; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <ui:VisualElement name="Content" tabindex="0" style="position: relative; width: 100%; height: 100%; flex-grow: 0; min-height: 100%; min-width: 100%; justify-content: center; align-items: center; display: none;">
+            <ui:Button tabindex="-1" text="Play" display-tooltip-when-elided="true" name="Play" class="many-buttons" style="-unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/UI/UI%20Assets/Fonts/Ubuntu%20font%20asset.asset?fileID=11400000&amp;guid=164aef100311e1e4d80de78f643dcdfe&amp;type=2#Ubuntu font asset&apos;);" />
+            <ui:Button tabindex="-1" text="Options" display-tooltip-when-elided="true" name="GoToPageOptions" class="many-buttons goto" />
+            <ui:Button tabindex="-1" text="Exit game" display-tooltip-when-elided="true" name="Exit" class="many-buttons" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PageContainer" style="width: 100%; height: 100%; display: flex; flex-grow: 1;">
+            <ui:VisualElement name="PageOptions" style="background-color: rgba(186, 231, 188, 0); width: 100%; height: 100%; display: flex;">
+                <ui:GroupBox name="Content" class="content" style="width: 100%; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: center; align-items: center; display: none; flex-grow: 1;">
+                    <ui:Button tabindex="-1" text="Sound" display-tooltip-when-elided="true" name="GoToPageSound" class="many-buttons exit goto" style="margin-bottom: 10px; margin-top: 10px;" />
+                    <ui:Button tabindex="-1" text="Graphics" display-tooltip-when-elided="true" name="GoToPageGraphics" class="many-buttons exit goto" style="margin-bottom: 10px; margin-top: 10px;" />
+                    <ui:Button tabindex="-1" text="Use default preset" display-tooltip-when-elided="true" name="LoadBack" class="many-buttons exit" style="margin-bottom: 10px; margin-top: 10px;" />
+                    <ui:Button tabindex="-1" text="Back" display-tooltip-when-elided="true" name="Return" class="many-buttons exit" style="margin-bottom: 10px; margin-top: 10px;" />
+                </ui:GroupBox>
+                <ui:VisualElement name="PageContainer" style="flex-grow: 1; width: 100%;">
+                    <ui:VisualElement name="PageSound" style="flex-grow: 1; display: none;">
+                        <ui:VisualElement name="Content" style="align-items: center; justify-content: center; flex-grow: 1;">
+                            <ui:Slider picking-mode="Ignore" label="Sound (100%)" value="42" high-value="100" name="sound" style="-unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/UI/UI%20Assets/Fonts/Ubuntu/Ubuntu-Bold%20SDF.asset?fileID=11400000&amp;guid=247349f10b9657f4fb0fdca8b2487f00&amp;type=2#Ubuntu-Bold SDF&apos;);" />
+                            <ui:Button tabindex="-1" text="Back" display-tooltip-when-elided="true" name="Return" class="many-buttons exit" style="margin-bottom: 10px; margin-top: 10px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="PageGraphics" style="display: flex; flex-grow: 1;">
+                        <ui:VisualElement name="Content" style="flex-grow: 1; align-items: center; justify-content: center;">
+                            <ui:DropdownField label="Resolution" index="-1" choices="hello you sexy thing" name="resolution" class="unity-dropdown" />
+                            <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="screen-mode" class="many-buttons" />
+                            <ui:Button tabindex="-1" text="Back" display-tooltip-when-elided="true" name="Return" class="many-buttons exit" style="margin-bottom: 10px; margin-top: 10px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:GroupBox>
+</ui:UXML>
